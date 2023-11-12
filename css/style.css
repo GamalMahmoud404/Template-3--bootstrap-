@@ -294,7 +294,7 @@ body:not(nav){
 /* -------- */
 @media (max-width: 992px) {
     .nav-slider{
-        background-color: #ffffffdc;
+        background-color: #f6f6f6eb;
         margin-top: 30px;
         margin-left: 0px;
     }
@@ -302,7 +302,7 @@ body:not(nav){
 
 @media (max-width: 768px) {
     .nav-slider{
-        background-color: #ffffffdc;
+        background-color: #f6f6f6eb;
         margin-top: 30px;
         margin-left: 0px;
     }
