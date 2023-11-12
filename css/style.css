@@ -306,6 +306,10 @@ body:not(nav){
         margin-top: 30px;
         margin-left: 0px;
     }
+    .nav-a1{
+        padding-right: 0px;
+        font-size: 18px; 
+    }
 }   
 
 /* ------ aside ---------------------------------------------- */
@@ -336,18 +340,22 @@ body:not(nav){
 
 @media (max-width: 768px) {
     .aside-0{
-        right: 5px; 
+        right: 20px; 
     }
     .nav-img{
-        height: 50px;
+        height: 45px;
     }
     .aside-i{
-        font-size: 40px;
+        font-size: 45px;
     }
     
     .aside-i:hover{
-        font-size: 45px;
+        font-size: 50px;
     }
+}
+
+.navbar-toggler-icon{
+    width: 25px;
 }
 
 /* ------ carousel---------------------------------------------- */
