@@ -344,7 +344,7 @@ body:not(nav){
 
 @media (max-width: 768px) {
     .aside-0{
-        right: 15px; 
+        right: 10px; 
     }
     .nav-img{
         height: 45px;
