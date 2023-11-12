@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Eye care</title>
+        <link rel="icon" href="./imges/l3.png" type="image/icon type">
+
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.css">
+        <link rel="stylesheet" href="./css/style.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Laila&family=Nunito:wght@500&family=Quicksand:wght@500&family=Rubik:wght@300&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Laila&family=Nunito:wght@500&family=Quicksand:wght@500&family=Raleway:wght@300&family=Rubik:wght@300&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+                
+    </head>
+    <body >
+        
+        <nav class="navbar navbar-expand-lg nav-light fixed-top" style="height: 90px;background-color: #fbfbfbb8;">
+            <div class="container-fluid col-11">
+                <input type="image" src="./imges/logo2.png" class="nav-img">
+                <a class="navbar-brand text-info border-right nav-a1" href="#">Eye care</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                  
+                <div class="collapse navbar-collapse justify-content-between nav-slider p-lg-0 p-4 rounded-4 col-lg-8 col-10" id="navbarSupportedContent" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link nav-a2" href="#"><span class="nav-span1">H</span><span class="nav-span2">ome</span></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link nav-a2" href="#"><span class="nav-span1">L</span><span class="nav-span2">ink</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle nav-a2 nav-a3" data-bs-toggle="dropdown">
+                                <span class="nav-span1">P</span><span class="nav-span2">roducts</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-span1" target="_blank" href="#">Eye Drop</a></li>
+                                <li><a class="dropdown-item nav-span1" target="_blank" href="#">Eye Ointment</a></li>
+                                <li><a class="dropdown-item nav-span1 border-bottom" target="_blank" href="#">Eye cream</a></li>
+                                <li><a class="dropdown-item nav-span1" target="_blank" href="#">Eyeglasses</a></li>
+                                <li><a class="dropdown-item nav-span1" target="_blank" href="#">Lenses</a></li>
+                                <li><a class="dropdown-item nav-span1" target="_blank" href="#">More...</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled nav-span1" href="#">about</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 d-flex flex-md-row flex-column" style=" align-items: center; gap: 10px;">
+                        <div class="d-flex justify-content-center mx-2" style="height: 40px; align-items: center;">
+                            <div class="nav-search-div">
+                                <i class="fas fa-search nav-search-i"></i>
+                            </div>
+                            <input class="nav-search px-3" type="search">
+                            <button class="nav-btn-search my-2 my-sm-0 px-2 btn-all" type="submit"><span>Search</span></button>
+                        </div>
+                        <button class="btn nav-btn btn-all my-2 my-sm-0 px-3" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><span>login</span></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ------  login  ---------------------------------------------------------------------------------------------- -->
+          
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4">
+                    <div class="form-container w-100 rounded-4">
+                        <div class="modal-header">
+                            <p class="title">Login</p>
+                            <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="modal"></button>
+                        </div>
+                        <form class="form">
+                            <div class="input-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="rounded-3" name="username" id="username" placeholder="">
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="rounded-3" name="password" id="password" placeholder="">
+                                <div class="forgot">
+                                    <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+                                </div>
+                            </div>
+                            <button class="sign">Sign in</button>
+                        </form>
+                        <div class="social-message">
+                            <div class="line"></div>
+                            <p class="message">Login with social accounts</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="social-icons">
+                            <button aria-label="Log in with Google" class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                                    <path d="M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z"></path>
+                                </svg>
+                            </button>
+                            <button aria-label="Log in with Twitter" class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                                    <path d="M31.937 6.093c-1.177 0.516-2.437 0.871-3.765 1.032 1.355-0.813 2.391-2.099 2.885-3.631-1.271 0.74-2.677 1.276-4.172 1.579-1.192-1.276-2.896-2.079-4.787-2.079-3.625 0-6.563 2.937-6.563 6.557 0 0.521 0.063 1.021 0.172 1.495-5.453-0.255-10.287-2.875-13.52-6.833-0.568 0.964-0.891 2.084-0.891 3.303 0 2.281 1.161 4.281 2.916 5.457-1.073-0.031-2.083-0.328-2.968-0.817v0.079c0 3.181 2.26 5.833 5.26 6.437-0.547 0.145-1.131 0.229-1.724 0.229-0.421 0-0.823-0.041-1.224-0.115 0.844 2.604 3.26 4.5 6.14 4.557-2.239 1.755-5.077 2.801-8.135 2.801-0.521 0-1.041-0.025-1.563-0.088 2.917 1.86 6.36 2.948 10.079 2.948 12.067 0 18.661-9.995 18.661-18.651 0-0.276 0-0.557-0.021-0.839 1.287-0.917 2.401-2.079 3.281-3.396z"></path>
+                                </svg>
+                            </button>
+                            <button aria-label="Log in with GitHub" class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-5 h-5 fill-current">
+                                    <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="signup">Don't have an account?
+                            <a rel="noopener noreferrer" href="#" class="">Sign up</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------ aside -------------------------------------------------------------->
+
+        <aside class="aside-0">
+            <ul>
+                <li class="my-4"><a href="#"><i class="fab fa-facebook-f aside-i"></i></a></li>
+                <li class="my-4"><a href="#"><i class="fab fa-whatsapp aside-i"></i></a></li>
+                <li class="my-4"><a href="#"><i class="fab fa-twitter aside-i"></i></a></li>
+                <li class="my-4"><a href="#"><i class="fab fa-linkedin-in aside-i"></i></a></li>
+                <li class="my-4"><a href="#"><i class="fab fa-instagram aside-i"></i></a></li>
+            </ul>
+
+        </aside>
+
+        <!------ Carousel -------------------------------------------------------------->
+
+        <main id="carouselExampleFade" class="carousel slide carousel-fade" style="margin-top: 90px;" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner">
+               <div class="carousel-item active"><!-- 1 -->
+                    <div class="d-flex flex-row justify-content-between bg-dark pb-md-0 pb-5">
+                        <div class="order-2 mb-md-0 mb-5">
+                            <img src="./imges/25.jpg" alt="Los Angeles" class="d-block carousel-img" style="">
+                        </div>
+                        <div class="order-1 " >
+                            <div class="carousel-caption carousel-div main-shadow">
+                                <div class="carousel-div2 col-5">
+                                    <h4>WELCOME TO</h4>
+                                    <h3>Eye care</h3>
+                                    <p class="d-sm-none">We guarantee you the highest quality.</p>
+                                    <p class="d-sm-block d-none">Eye care is equipped with the latest state-of-the-art technology with a commitment to providing customised eye care of the highest quality.</p>
+                                    <button type="submit" href="#" class="btn-all1 mx-2">Book a date</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active"><!-- 2 -->
+                    <div class="d-flex flex-row justify-content-between bg-dark pb-md-0 pb-5">
+                        <div class="order-2 mb-md-0 mb-5">
+                            <img src="./imges/20.jpg" alt="Los Angeles" class="d-block carousel-img" style="">
+                        </div>
+                        <div class="order-1" >
+                            <div class="carousel-caption carousel-div main-shadow">
+                                <div class="carousel-div2 col-5">
+                                    <h4>ABOUT</h4>
+                                    <h3>Eye care</h3>
+                                    <p class="d-sm-none">We guarantee you the highest quality.</p>
+                                    <p class="d-sm-block d-none">Eye care is equipped with the latest state-of-the-art technology with a commitment to providing customised eye care of the highest quality.</p>
+                                    <p class="d-lg-block d-none"> We pride ourselves in being able to achieve excellent outcomes for our patients in a caring, courteous and professional manner.</p>
+                                    <button type="submit" href="#" class="btn-all1 mx-2">know more</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active"><!-- 3 -->
+                    <div class="d-flex flex-row justify-content-between bg-dark pb-md-0 pb-5">
+                        <div class="order-2 mb-md-0 mb-5">
+                            <img src="./imges/24.jpg" alt="Los Angeles" class="d-block carousel-img" style="">
+                        </div>
+                        <div class="order-1" >
+                            <div class="carousel-caption carousel-div main-shadow">
+                                <div class="carousel-div2 col-5">
+                                    <h4>ABOUT</h4>
+                                    <h3>Eye Treatments</h3>
+                                    <p class="d-sm-none">We guarantee you the highest quality.</p>
+                                    <p class="d-sm-block d-none">Eye care is equipped with the latest state-of-the-art technology with a commitment to providing customised eye care of the highest quality.</p>
+                                    <p class="d-lg-block d-none"> We pride ourselves in being able to achieve excellent outcomes for our patients in a caring, courteous and professional manner.</p>
+                                    <button type="submit" href="#" class="btn-all1 mx-2">know more</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active"> <!-- 4 -->
+                    <div class="d-flex flex-row justify-content-between bg-dark pb-md-0 pb-5">
+                        <div class="order-2 mb-md-0 mb-5">
+                            <img src="./imges/22.jpg" alt="Los Angeles" class="d-block carousel-img" style="">
+                        </div>
+                        <div class="order-1" >
+                            <div class="carousel-caption carousel-div main-shadow">
+                                <div class="carousel-div2 col-5">
+                                    <h4>ABOUT</h4>
+                                    <h3>Eye Surgery</h3>
+                                    <p class="d-sm-none">We guarantee you the highest quality.</p>
+                                    <p class="d-sm-block d-none">Eye care is equipped with the latest state-of-the-art technology with a commitment to providing customised eye care of the highest quality.</p>
+                                    <p class="d-lg-block d-none"> We pride ourselves in being able to achieve excellent outcomes for our patients in a caring, courteous and professional manner.</p>
+                                    <button type="submit" href="#" class="btn-all1 mx-2">know more</button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev carousel-control-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <div class="carousel-control-div">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </div>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-control-btn" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <div class="carousel-control-div">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </div>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </main>
+
+        <!------------ section-1 --------------------------------------------------------------------->
+
+        <section class="container-fluid col-md-11 col-12 mt-5 rounded-4">
+            <div class="col-12 d-flex flex-lg-row flex-column justify-content-evenly p-0" >
+                <div class="col-lg-6 col-12 sec-1-img-container mb-3 mt-lg-5" >
+                    <div class="sec-1-img1-d w-50 ">
+                        <img src="./imges/27.png" alt="" class="sec-1-img1 w-100">
+                    </div>
+                    <img src="./imges/26.png" alt="" class="sec-1-img2 w-50 mt-5" draggable="false">
+                    <img src="./imges/222333.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-lg-6 col-12 rounded-4 sec-1-div-content p-3 mb-3">
+                    <div class="sec-1-div-content-d w-100 h-100 px-4 py-5 rounded-4">
+                        <p class="sec-1-span">WELCOME</p>
+                        <p><span class="fw-bolder">We offer a wide variety of treatments, for both public and private patients,</span>
+                        that include cataract surgery, glaucoma management, oculoplastic, lacrimal and orbital surgery, laser treatment, intravitreal injection therapy and vitreo-retinal surgery.</p>
+                        <button type="submit" href="#" class="btn-all1">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr >
+
+        <!---------  section-2 ------------------------------------------------------------------------>
+        
+        <section class="container-fluid my-5 col-11">
+            <div class="container-fluid sec-2-d  col-xxl-7 col-lg-9 col-sm-11 col-12 p-0">
+                <div class="container-fluid col-12 p-0 text-center sec-1 sec-2 overflow-hidden">
+                    <div class="sec-2-d3 mx-auto rounded-5"></div>
+                    <div class="sec-2-d2 col-12 px-5 py-4 rounded-4">
+                        <p class="h1 sec-2-p">Cases we receive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item col-11 mx-auto sec-2-item"><!-- 1 -->
+                    <h2 class="accordion-header " id="head1" style="margin-top: 80px;">
+                      <button class="accordion-button collapsed px-4 py-3 rounded-4 sec-2-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                        <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>
+                        oculoplastic pathology
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse rounded-4 mt-3 sec-2-div" aria-labelledby="head1" data-bs-parent="#accordioncollapse" style="">
+                        <div class="accordion-body p-4">
+                            Eyelid Cancers, Droopy/Baggy Eyelids, Ectropion, Entropion, Ptosis
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col-11 mt-3 mx-auto sec-2-item"><!-- 2 -->
+                    <h2 class="accordion-header" id="head2">
+                        <button class="accordion-button collapsed px-4 py-3 rounded-4 sec-2-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+                            <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>
+                            lacrimal diseases
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse rounded-4 mt-3 sec-2-div" aria-labelledby="head2" data-bs-parent="#accordioncollapse" style="">
+                        <div class="accordion-body border-info text-secondary p-4">
+                            Persistent Watering
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item col-11 mt-3 mx-auto sec-2-item"><!-- 3 -->
+                    <h2 class="accordion-header" id="head3">
+                      <button class="accordion-button collapsed px-4 py-3 rounded-4 sec-2-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>
+                        orbital diseases
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse rounded-4 mt-3 sec-2-div" aria-labelledby="head3" data-bs-parent="#accordioncollapse">
+                        <div class="accordion-body border-info text-secondary p-4">
+                            Thyroid Eye Disease, Orbital Tumours, Orbital Inflammation
+                        </div>
+                    </div>
+                </div>     
+                <div class="accordion-item col-11 mt-3 mx-auto sec-2-item"><!-- 4 -->
+                    <h2 class="accordion-header" id="head4">
+                      <button class="accordion-button collapsed px-4 py-3 rounded-4 sec-2-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>
+                        medical retinal conditions
+                      </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse rounded-4 mt-3 sec-2-div" aria-labelledby="head4" data-bs-parent="#accordioncollapse">
+                        <div class="accordion-body border-info text-secondary p-4">
+                            Age-related Macular Degeneration, Retinal Vein Occlusions, Diabetic Retinopathy
+                        </div>
+                    </div>
+                </div>  
+                <div class="accordion-item col-11 mt-3 mx-auto sec-2-item"><!-- 5 -->
+                    <h2 class="accordion-header" id="head5">
+                        <button class="accordion-button collapsed px-4 py-3 rounded-4 sec-2-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">      
+                            <i class="fas fa-question-circle fa-sm me-2 opacity-70"></i>
+                            surgical retinal diseases
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse rounded-4 mt-3 sec-2-div" aria-labelledby="head5" data-bs-parent="#accordioncollapse">
+                        <div class="accordion-body border-info text-secondary p-4">
+                            Retinal Tears, Epiretinal Membranes, Macular Holes, Persistent Floaters, Diabetic Vitreous Haemorrhage and Retinal Detachment
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <hr style="margin-top: 120px;">
+
+        <!---------  section-3 ------------------------------------------------------------------------>
+        
+        <section class="container-fluid mx-auto mb-5">
+            <div class="container-fluid sec-2-d  col-xxl-7 col-lg-9 col-sm-11 col-12 p-0">
+                <div class="container-fluid col-12 p-0 text-center sec-1 sec-2 overflow-hidden">
+                    <div class="sec-2-d3 mx-auto rounded-5"></div>
+                    <div class="sec-2-d2 col-12 px-5 py-4 rounded-4">
+                        <p class="h1 sec-2-p">Complaints and comments</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid row justify-content-evenly mx-auto">
+                <div class="container col-xl-3 col-md-5 col-10 rounded-4 mt-5 sec-3-d sec-1-shadow p-0" >
+                    <div class="sec-3 pb-5 pt-5 px-4 rounded-4 overflow-hidden">
+                        <span class="fs-6 sec-3-p1">Report a problem</span>
+                        <a href="#" class="fs-6 underline-none text-decoration-none sec-3-p2 fw-bolder ">Press Here</a>
+                        <br> 
+                        <div class="my-4 w-auto btn-active">
+                            <button type="submit" href="#" class="btn-all1">send</button>
+                            <div class="tooltip-1 p-3">
+                                Make sure to write a comment !
+                            </div>
+                        </div> 
+                    </div>
+                    <form action="/action_page.php" class="shadow rounded-4 p-2 sec-3-form">
+                        <div class="form-floating form-floating-1 rounded-4">
+                          <textarea class="form-control form-control-1 rounded-4" id="comment" rows="6" name="text" placeholder="Comment goes here"></textarea>
+                          <label for="comment">Comments</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="container col-xl-3 col-md-5 col-10 rounded-4 mt-5 sec-3-d sec-1-shadow p-0" >
+                    <div class="sec-3 pb-5 pt-5 px-4 rounded-4 overflow-hidden">
+                        <span class="fs-6 sec-3-p1">Suggestion or opinion</span>
+                        <a href="#" class="fs-6 underline-none text-decoration-none sec-3-p2 fw-bolder ">Press Here</a>
+                        <br> 
+                        <div class="my-4 w-auto btn-active">
+                            <button type="submit" href="#" class="btn-all1">send</button>
+                            <div class="tooltip-1 p-3">
+                                Make sure to write a comment !
+                            </div>
+                        </div> 
+                    </div>
+                    <form action="/action_page.php" class="shadow rounded-4 p-2 sec-3-form">
+                        <div class="form-floating form-floating-1 rounded-4">
+                          <textarea class="form-control form-control-1 rounded-4" id="comment" rows="6" name="text" placeholder="Comment goes here"></textarea>
+                          <label for="comment">Comments</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="container col-xl-3 col-md-5 col-10 rounded-4 mt-5 sec-3-d sec-1-shadow p-0" >
+                    <div class="sec-3 pb-5 pt-5 px-4 rounded-4 overflow-hidden">
+                        <span class="fs-6 sec-3-p1">A problem with the site</span>
+                        <a href="#" class="fs-6 underline-none text-decoration-none sec-3-p2 fw-bolder ">Press Here</a>
+                        <br> 
+                        <div class="my-4 w-auto btn-active">
+                            <button type="submit" href="#" class="btn-all1">send</button>
+                            <div class="tooltip-1 p-3">
+                                Make sure to write a comment !
+                            </div>
+                        </div> 
+                    </div>
+                    <form action="/action_page.php" class="shadow rounded-4 p-2 sec-3-form">
+                        <div class="form-floating form-floating-1 rounded-4">
+                          <textarea class="form-control form-control-1 rounded-4" id="comment" rows="6" name="text" placeholder="Comment goes here"></textarea>
+                          <label for="comment">Comments</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div class="sec-3-bg"></div>
+
+        <!---------  section-4 ------------------------------------------------------------------------>
+
+        <section class="container-fluid my-5">
+            <div class="container-fluid sec-2-d  col-xxl-7 col-lg-9 col-sm-11 col-12 p-0">
+                <div class="container-fluid col-12 p-0 text-center sec-1 sec-2 overflow-hidden">
+                    <div class="sec-2-d3 mx-auto rounded-5"></div>
+                    <div class="sec-2-d2 col-12 px-5 py-4 rounded-4">
+                        <p class="h1 sec-2-p">Eye surgery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid row justify-content-evenly mx-auto" >
+                <!-- 1 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/25-3-2.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 my-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Retinal surgery</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Raja</p>
+                        <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/29.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Epiretinal membrane</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Raja</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/30.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Diabetic Retinopathy</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Raja</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 4 --> 
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/08-3-2.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 my-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Eyelid surgery</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Gounder</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/28.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Watery Eye Surgery</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Gounder</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/11.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Orbital surgery</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Gounder</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/04-3-2.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Trabeculectomy</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Tan</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="container col-xl-3 col-md-5 col-10 pt-0 pb-0 px-0 mt-5 mx-1 rounded-4 sec-1-shadow sec-4-content">
+                    <input type="image" src="./imges/15-3-2.jpg" class="w-100 rounded-top-4 sec-4-img mb-0">      
+                    <div class="px-4 py-4 sec-4-div rounded-4 mt-0">
+                        <p class="lh-sm h4 fw-normal sec-4-p1">Retinal Detachment</p>
+                        <p class="lh-lg fw-light sec-4-p2">Dr. Tan</p>
+                         <button type="submit" href="#" class="btn-all1 float-right sec-4-a mx-4">Know More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sec-4-bg mb-3"></div>
+        <hr>
+
+        <!---------  section-5 ------------------------------------------------------------------------>
+
+        <section class="container-fluid my-5">
+            <div class="container-fluid sec-2-d  col-xxl-7 col-lg-9 col-sm-11 col-12 p-0">
+                <div class="container-fluid col-12 p-0 text-center sec-1 sec-2 overflow-hidden">
+                    <div class="sec-2-d3 mx-auto rounded-5"></div>
+                    <div class="sec-2-d2 col-12 px-5 py-4 rounded-4">
+                        <p class="h1 sec-2-p">THANKS FOR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid row justify-content-evenly mx-auto">
+                <div class=" col-xl-3 col-md-5 col-10 p-0 mt-5 rounded-4 sec-5">
+                    <div class=" sec-5-bg sec-5-bg-1 rounded-4"></div>
+                    <div class="sec-5-div sec-5-div-1 p-4 rounded-4">
+                        <div >
+                            <p class="sec-5-p-c h4">All thanks and appreciation</p>
+                            <p class="sec-5-p-c h6"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="pt-5 mt-5" >
+                            <input type="image" src="./imges/31-s.jpg" class="sec-5-img rounded-circle ">
+                            <p class="sec-5-p-c h5">Dr. Vignesh Raja</p>
+                            <p class="sec-5-p-c h6">Master of Surgery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-md-5 col-10 p-0 mt-5 rounded-4 sec-5">
+                    <div class=" sec-5-bg sec-5-bg-2 rounded-4"></div>
+                    <div class="sec-5-div sec-5-div-2 p-4 rounded-4">
+                        <div >
+                            <p class="sec-5-p-c h4">All thanks and appreciation</p>
+                            <p class="sec-5-p-c h6"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="pt-5 mt-5" >
+                            <input type="image" src="./imges/34-s.jpg" class="sec-5-img rounded-circle ">
+                            <p class="sec-5-p-c h5">Dr. Pav Gounder</p>
+                            <p class="sec-5-p-c h6">Master of Medicine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-md-5 col-10 p-0 mt-5 rounded-4 sec-5">
+                    <div class=" sec-5-bg sec-5-bg-3 rounded-4"></div>
+                    <div class="sec-5-div sec-5-div-3 p-4 rounded-4">
+                        <div >
+                            <p class="sec-5-p-c h4">All thanks and appreciation</p>
+                            <p class="sec-5-p-c h6"><i class="far fa-clock"></i> October 15, 2020</p>
+                        </div>
+                        <div class="pt-5 mt-5" >
+                            <input type="image" src="./imges/33-s.jpg" class="sec-5-img rounded-circle ">
+                            <p class="sec-5-p-c h5">Dr. Irene Tan</p>
+                            <p class="sec-5-p-c h6">MBBS (Hons), MMed (OphthSci) RANZCO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!---------  section-6 ------------------------------------------------------------------------>
+
+        <section class="container-fluid pb-5">
+            <div class="container-fluid sec-2-d  col-xxl-7 col-lg-9 col-sm-11 col-12 p-0">
+                <div class="container-fluid col-12 p-0 text-center sec-1 sec-2 overflow-hidden">
+                    <div class="sec-2-d3 mx-auto rounded-5"></div>
+                    <div class="sec-2-d2 col-12 px-5 py-4 rounded-4">
+                        <p class="h1 sec-2-p">Common Eye Conditions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-xxl-10 col-md-11 col-sm-10 col-11 rounded-4 overflow-hidden mt-5 sec-1-shadow sec-6-d pb-md-0 pb-3" style="background: -webkit-repeating-radial-gradient(top left,circle,#e6ecec56,#e6ecec,#f5efec,#f5efec); margin-top: 100px !important;">
+                <div class="d-flex flex-md-row flex-column justify-content-between rounded-4 w-100" >
+                    <div class="p-lg-5 p-md-4 p-3 col-md-8 col-12 h-100 order-md-1 order-2">
+                        <p class="h2 sec-6-p-title mb-3">Age-Related Macular Degeneration</p>
+                        <p class="h6"><i class="far fa-calendar-alt"></i> Mon, May 25th 2020</p>
+                        <div class="sec-6-row rounded-4 mt-1 mb-xl-4 mb-md-2 mb-4"></div>
+                        <p>
+                            Age-related macular degeneration (AMD) is a disease that affects a person's central vision. AMD can result in severe loss of central vision, but people rarely go blind from it. Risk factors for AMD include being 50 and older, smoking, having high blood pressure and eating a diet high in saturated fat.
+                        </p>
+                        <div class="pt-xl-4 pt-md-2 pt-4">
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-tag"></i> podcast</span>
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-clock"></i> 55 mins.</span>
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span3"><a href="#" class="text-decoration-none sec-6-a1"><i class="fas fa-play"></i> podcast</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 overflow-hidden sec-6-d1 order-md-2 order-1">
+                        <div class="sec-6-d2 col-xl-4 col-lg-5 col-0 h-100" ></div>
+                        <div class="h-100 sec-6-img1-div" >
+                            <input type="image" src="./imges/22.jpg" class="sec-6-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-xxl-10 col-md-11 col-sm-10 col-11 rounded-4 overflow-hidden mt-5 sec-1-shadow sec-6-d pb-md-0 pb-3" style="background: -webkit-repeating-radial-gradient(top right,circle,#ece6e656,#ece6e6,#f5efec,#f5efec);">
+                <div class="d-flex flex-md-row flex-column justify-content-between rounded-4 w-100">
+                    <div class="p-lg-5 p-md-4 p-3 col-md-8 col-12 h-100 order-2">
+                        <p class="h2 sec-6-p-title mb-3">Amblyopia (Lazy Eye)</p>
+                        <p>Mon, May 25th 2020</p>
+                        <div class="sec-6-row rounded-4 mb-xl-4 mb-md-2 mb-4"></div>
+                        <p >Amblyopia (also called lazy eye) is a type of poor vision that usually happens in just 1 eye but less commonly in both eyes. It develops when there’s a breakdown in how the brain and the eye work together, and the brain can’t recognize the sight from 1 eye. Over time, the brain relies more and more on the other, stronger eye — while vision in the weaker eye gets worse.</p>
+                        <div class="pt-xl-4 pt-md-2 pt-4">
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-tag"></i> podcast</span>
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-clock"></i> 55 mins.</span>
+                            <span class="badge bg-secondary sec-6-span1 sec-6-span3"><a href="#" class="text-decoration-none sec-6-a1"><i class="fas fa-play"></i> podcast</a></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 overflow-hidden sec-6-d1 order-1">
+                        <div class="sec-6-d3 col-xl-4 col-lg-5 col-0 h-100"></div>
+                        <div class="h-100 sec-6-img1-div" >
+                            <input type="image" src="./imges/04.jpg" class="sec-6-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-xxl-10 col-md-11 col-sm-10 col-11 rounded-4 overflow-hidden mt-5 sec-1-shadow sec-6-d pb-md-0 pb-3" style="background: -webkit-repeating-radial-gradient(top left,circle,#e6ece856,#e6ece8,#f5efec,#f5efec);">
+                <div class="d-flex flex-md-row flex-column justify-content-between rounded-4 w-100">
+                    <div class="p-lg-5 p-md-4 p-3 col-md-8 col-12 h-100 order-md-1 order-2">
+                        <p class="h2 sec-6-p-title mb-3">Astigmatism</p>
+                        <p>Mon, May 25th 2020</p>
+                        <div class="sec-6-row rounded-4 mb-xl-4 mb-md-2 mb-4"></div>
+                        <p>
+                            What is astigmatism? Astigmatism is a common eye problem that can make your vision blurry or distorted. It happens when your cornea (the clear front layer of your eye) or lens (an inner part of your eye that helps the eye focus) has a different shape than normal.</p>
+                            <div class="pt-xl-4 pt-md-2 pt-4">
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-tag"></i> podcast</span>
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-clock"></i> 55 mins.</span>
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span3"><a href="#" class="text-decoration-none sec-6-a1"><i class="fas fa-play"></i> podcast</a></span>
+                            </div>
+                    </div>
+                    <div class="col-md-4 col-12 overflow-hidden sec-6-d1 order-md-2 order-1">
+                        <div class="sec-6-d2 col-xl-4 col-lg-5 col-0 h-100"></div>
+                        <div class="h-100 sec-6-img1-div" >
+                            <input type="image" src="./imges/29-s.jpg" class="sec-6-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid col-xxl-10 col-md-11 col-sm-10 col-11 rounded-4 overflow-hidden mt-5 sec-1-shadow sec-6-d pb-md-0 pb-3" style="background: -webkit-repeating-radial-gradient(top right,circle,#ecebe656,#ecebe6,#f5efec,#f5efec);">
+                <div class="d-flex flex-md-row flex-column justify-content-between rounded-4 w-100">
+                    <div class="p-lg-5 p-md-4 p-3 col-md-8 col-12 h-100 order-2">
+                        <p class="h2 sec-6-p-title mb-3">Cataracts</p>
+                        <p>Mon, May 25th 2020</p>
+                        <div class="sec-6-row rounded-4 mb-xl-4 mb-md-2 mb-4"></div>
+                        <p>
+                            A cataract scatters and blocks the light as it passes through the lens. This prevents a sharply defined image from reaching your retina. As a result, your vision becomes blurred. Cataracts usually happen in both eyes, but not always at the same rate. The cataract in one eye may be worse than the other.</p>
+                            <div class="pt-xl-4 pt-md-2 pt-4">
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-tag"></i> podcast</span>
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span2"><i class="fas fa-clock"></i> 55 mins.</span>
+                                <span class="badge bg-secondary sec-6-span1 sec-6-span3"><a href="#" class="text-decoration-none sec-6-a1"><i class="fas fa-play"></i> podcast</a></span>
+                            </div>
+                    </div>
+                    <div class="col-md-4 col-12 overflow-hidden sec-6-d1 order-1">
+                        <div class="sec-6-d3 col-xl-4 col-lg-5 col-0 h-100"></div>
+                        <div class="h-100 sec-6-img1-div" >
+                            <input type="image" src="./imges/24.jpg" class="sec-6-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------  section-7 ------------------------------------------------------------------------>
+
+        <section class="container-fluid pb-5">
+            <div class="text-center py-5">
+                <p class="sec-2-p h1">JOIN US</p>
+            </div>
+            <div class="container-fluid row justify-content-evenly col-lg-10 col-md-11 col-12 text-center mx-auto">
+                <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-5 col-7 py-4 rounded-4 sec-7-div mt-5 mx-1"> <!-- 1 -->
+                    <p class="h3 sec-7-p">Follow</p>
+                    <a href="#" target="_blank"><input type="image" src="./imges/35-c.png" class="w-50 mx-auto sec-7-img" ></a>
+                    <br>
+                    <a href="#" class="h3 sec-7-a1" target="_blank">Go to link</a>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-5 col-7 py-4 rounded-4 sec-7-div mt-5 mx-1"> <!-- 2 -->
+                    <p class="h4 sec-7-p">Like the page</p>
+                    <a href="#" target="_blank"><input type="image" src="./imges/36-c.png" class="w-50 mx-auto sec-7-img" ></a>
+                    <br>
+                    <a href="#" class="h3 sec-7-a1" target="_blank">Go to link</a>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-5 col-7 py-4 rounded-4 sec-7-div mt-5 mx-1"> <!-- 3 -->
+                    <p class="h4 sec-7-p">Subscribe</p> 
+                    <a href="#" target="_blank"><input type="image" src="./imges/37-c.png" class="w-50 mx-auto sec-7-img" ></a>
+                    <br>
+                    <a href="#" class="h3 sec-7-a1" target="_blank">Go to link</a>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-5 col-7 py-4 rounded-4 sec-7-div mt-5 mx-1"> <!-- 4 -->
+                    <p class="h4 sec-7-p">watch vedios</p>
+                    <a href="#" target="_blank"><input type="image" src="./imges/38-c.png" class="w-50 mx-auto sec-7-img" ></a>
+                    <br>
+                    <a href="#" class="h3 sec-7-a1" target="_blank">Go to link</a>
+                </div>
+                <div class="col-xxl-2 col-lg-3 col-md-4 col-sm-5 col-7 py-4 rounded-4 sec-7-div mt-5 mx-1"> <!-- 5 -->
+                    <p class="h3 sec-7-p">Follow</p>
+                    <a href="#" target="_blank"><input type="image" src="./imges/39-c.png" class="w-50 mx-auto sec-7-img" ></a>
+                    <br>
+                    <a href="#" class="h3 sec-7-a1" target="_blank">Go to link</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------  footer  ------------------------------------------------------------------------------------------------------------- -->
+
+        <footer class="container-fluid mt-5 footer-c p-0">
+            <div class="container-fluid row justify-content-evenly py-5 col-xl-11 mx-auto">
+                <div class="col-lg-4 col-sm-8 col-10 footer-div1 ">
+                    <div class="col-11 mx-auto footer-div2">
+                        <div class="mx-auto w-75 pt-4 pb-3 footer-div3">
+                            <img src="./imges/42.png" alt="Home" class="w-25 footer-img1" draggable="false">
+                            <span class="h4 footer-span1">QUICK LINKS</span>
+                        </div>
+                    </div>
+                    <div class="footer-div4 mt-4">
+                        <ul >
+                            <li><a href="#" target="_blank">HOME</a></li>
+                            <li><a href="#" target="_blank">ABOUT</a></li>
+                            <li><a href="#" target="_blank">EYE TESTS & TREATMENTS</a></li>
+                            <li><a href="#" target="_blank">EYE SURGERY</a></li>
+                            <li><a href="#" target="_blank">APPOINTMENT</a></li>
+                            <li><a href="#" target="_blank">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-8 col-10 footer-div1 ">
+                    <div class="col-11 mx-auto footer-div2">
+                        <div class="mx-auto w-75 pt-4 pb-3 footer-div3">
+                            <img src="./imges/40.png" alt="Home" class="w-25 footer-img1" draggable="false">
+                            <span class="h4 footer-span1">CONTACT US</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 px-xxl-5 px-xl-4 px-lg-3 px-5">
+                        <p class="footer-p1">
+                            Our clinic is in the heart of Eye Care , conveniently near the Lakeside Eye Care  Shopping centre with ample parking available, as well as walking distance to the Eye Care  Train Station and Eye Care  Hospital.
+                        </p>
+                        <p class="footer-p1">If you require an emergency ophthalmology appointment, please call us (08) 9300 9600. For all emergencies out-of-office hours, please attend to Emergency Department, Sir Charles Gairdner Hospital in Nedlands.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-8 col-10 footer-div1 ">
+                    <div class="col-11 mx-auto footer-div2">
+                        <div class="mx-auto w-75 pt-4 pb-3 footer-div3">
+                            <img src="./imges/41.png" alt="Home" class="w-25 footer-img1" draggable="false">
+                            <span class="h4 footer-span1">OUR CLINIC</span>
+                        </div>
+                    </div>
+                    <div class="mt-4 px-xxl-5 px-xl-4 px-lg-3 px-5">
+                        <p class="footer-p1">
+                            Suite 14 and 15, 10 Reid Promenade Eye Care  WA 6027
+                        </p>
+                        <p class="footer-p1">
+                            P:(08) 9300 9600 F: (08) 9300 9700E :info@Eye Care eyeclinic.com.au
+                        </p>
+                        <p class="footer-p1">Nearest Landmarks: Opposite Eye Care  Police Station, Next to Bailey’s Tavern.</p>
+                        <span class="footer-p1">Clinic Hours</span>
+                        <br>
+                        <span class="footer-p1">Monday – Friday : 8.30am – 5.00pm</span>
+                        <br>
+                        <span class="footer-p1">Saturday – Sunday : Closed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-div5 row justify-content-around text-center pb-3 pt-1 m-0">
+                <div class="footer-p1 col-lg-6 col-11 pt-2">
+                    Copyright &copy; 2023, Eye Care. All rights reserved.
+                </div>
+                <div class="footer-p1 col-lg-6 col-11 pt-2">
+                    Web Design by GM
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap.bundle.min.js"></script>   
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>     
+    </body>
+</html>
