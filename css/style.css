@@ -300,6 +300,14 @@ body:not(nav){
     }
 }
 
+@media (max-width: 768px) {
+    .nav-slider{
+        background-color: #ffffffdc;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}   
+
 /* ------ aside ---------------------------------------------- */
 
 .aside-0{
@@ -322,13 +330,23 @@ body:not(nav){
 }
 
 .aside-i:hover{
-    font-size: 50px;
+    font-size: 55px;
     color: #00b3ff;
 }
 
 @media (max-width: 768px) {
     .aside-0{
-        right: 15px; 
+        right: 5px; 
+    }
+    .nav-img{
+        height: 50px;
+    }
+    .aside-i{
+        font-size: 40px;
+    }
+    
+    .aside-i:hover{
+        font-size: 45px;
     }
 }
 
