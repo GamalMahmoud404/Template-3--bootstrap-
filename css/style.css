@@ -307,7 +307,7 @@ body:not(nav){
         margin-left: 0px;
     }
     .nav-a1{
-        padding-right: 0px;
+        padding-right: 5px;
         font-size: 18px; 
     }
 }   
