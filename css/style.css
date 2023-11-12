@@ -321,7 +321,7 @@ body:not(nav){
     top:50%;
     transform: translateY(-55%);
     position: fixed;
-    z-index: 2;
+    z-index: 7;
 }
 
 .aside-0 ul li{
@@ -340,17 +340,17 @@ body:not(nav){
 
 @media (max-width: 768px) {
     .aside-0{
-        right: 20px; 
+        right: 15px; 
     }
     .nav-img{
         height: 45px;
     }
     .aside-i{
-        font-size: 45px;
+        font-size: 35px;
     }
     
     .aside-i:hover{
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
