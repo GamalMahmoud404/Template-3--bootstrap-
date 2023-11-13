@@ -471,6 +471,7 @@ body:not(nav){
 
 .carousel-div p , .carousel-div2-none p{
     font-weight: 300;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -492,9 +493,15 @@ body:not(nav){
         top: auto;
         text-align: center;
     }
+    .carousel-div h4{
+        font-size: 14px;
+    }
     .carousel-div h3{
         letter-spacing: 6px;
-        font-size: 40px;
+        font-size: 25px;
+    }
+    .carousel-div p , .carousel-div2-none p{
+        font-size: 13px;
     }
 }
 
